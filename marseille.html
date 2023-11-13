@@ -17,41 +17,49 @@
     </head>
 
     <body>
+        <!-- BACKGROUND Page-->
+        <div class="img_background"></div>
+
+        <!-- HEADER-->
         <header  class="home_header">
             <div class="vide">vide</div>
-            <h1 class="title_page">
-                <a href="./marseille.html">Ville de Marseille</a>
-            </h1>
 
+            <!-- TITLE Header-->
+            
+                <a class="title_logo_header" href="./marseille.html">
+                    <img class="logo_header" src="./assets/logo-head.png" alt="logo de la ville de Marseille">
+                    <h1>Ville de Marseille</h1>
+                    <img class="logo_header" src="./assets/logo-head.png" alt="logo de la ville de Marseille">
+                </a>
+     
+
+            <!-- ICONS Header-->
             <ul class="home_header_list">
                 <li>
                     <a href="https://twitter.com/marseille" title="Twitter" target="_blank">
-                        <i class="fa-brands fa-twitter" style="color: #fff;"></i>
+                        <i class="icons_header x fa-brands fa-x-twitter"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://facebook.com/marseilleville/" title="Facebook" target="_blank">
-                        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                        <i class="icons_header facebook fa-brands fa-facebook"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/villemarseille/" title="Instagram" target="_blank">
-                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        <i class="icons_header instagram fa-brands fa-instagram"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/user/VilledeMarseille" title="Youtube" target="_blank">
-                        <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                        <i class="icons_header youtube fa-brands fa-youtube"></i>
                     </a>
                 </li>
             </ul>
         </header>
 
-        <div class="img_background"></div>
-
-        <!-- Side Bar -->
+        <!-- BOUTON SideBar -->
         <input type="checkbox" name="" id="Open">
-
         <div class="btn_menu">
             <label for="Open" class="sidebarIcon">
                 <div class="wrapper first"></div>
@@ -60,6 +68,7 @@
             </label>
         </div>
 
+        <!-- MENU SideBar-->
         <nav id="sidebar_menu">
             <ul class="menu">
                 <li><a href="#">Histoire</a></li>
@@ -71,11 +80,36 @@
             </ul>
         </nav>
 
-        <main>
+        <!-- CONTENU Main-->
+        <main class="main_container">
+            <h2>
+                Bienvenue sur le site
+                    <br>
+                de la Ville
+            </h2>
+            <a class="btn_main" href="#">Notre histoire...</a>
         </main>
 
-        <footer>
+        <footer class="footer_container">
+            <nav>
+                <ul class="footer_list">
+                  <li class="menu-deroulant">
+                    <a href="#">Services <div class="footer_fleche">➜</div></a>
+                    <ul class="sous-menu">
+                        <li><a href="#">Histoire</a></li>
+                        <li><a href="#">Randonnées</a></li>
+                        <li><a href="#">Les Plages</a></li>
+                        <li><a href="#">Parcs Publiques</a></li>
+                        <li><a href="#">Musées</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                  </li>
+                </ul>
 
+                <ul>
+                    <li><a class="contacter" href="#">Nous Contacter...</a></li>
+                </ul>
+            </nav>
         </footer>
     </body>
 </html>

@@ -85,12 +85,7 @@ main {
     border: 4px black solid;
 }
 .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-    /* height: 100%; */
+    margin-top: -250px;
 }
 .menu li a {
     display: block;

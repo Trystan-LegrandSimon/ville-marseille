@@ -4,10 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>Ville de Marseille - Accueil</title>
-        <link rel="stylesheet" href="./css/marseille.css">
+
+   
+            <link rel="stylesheet" href="./css/marseille.css">
+       
         <link rel="shortcut icon" href="./assets/logo-head.png" type="image/x-icon">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
         <meta
@@ -17,20 +20,16 @@
     </head>
 
     <body>
-        <!-- BACKGROUND Page-->
-        <div class="img_background"></div>
-
         <!-- HEADER-->
         <header  class="home_header">
             <div class="vide">vide</div>
 
             <!-- TITLE Header-->
-            
-                <a class="title_logo_header" href="./marseille.html">
-                    <img class="logo_header" src="./assets/logo-head.png" alt="logo de la ville de Marseille">
-                    <h1>Ville de Marseille</h1>
-                    <img class="logo_header" src="./assets/logo-head.png" alt="logo de la ville de Marseille">
-                </a>
+            <a class="title_logo_header" href="/marseille.html">
+                <img class="logo_header" src="/assets/logo-head.png" alt="logo de la ville de Marseille">
+                <h1>Ville de Marseille</h1>
+                <img class="logo_header" src="/assets/logo-head.png" alt="logo de la ville de Marseille">
+            </a>
      
 
             <!-- ICONS Header-->
@@ -58,30 +57,31 @@
             </ul>
         </header>
 
-        <!-- BOUTON SideBar -->
-        <input type="checkbox" name="" id="Open">
-        <div class="btn_menu">
-            <label for="Open" class="sidebarIcon">
-                <div class="wrapper first"></div>
-                <div class="wrapper second"></div>
-                <div class="wrapper third"></div>
-            </label>
-        </div>
+        <aside>
+            <!-- BOUTON SideBar -->
+            <input type="checkbox" name="" id="Open">
+            <div class="btn_menu">
+                <label for="Open" class="sidebar_icon">
+                    <div class="wrapper first"></div>
+                    <div class="wrapper second"></div>
+                    <div class="wrapper third"></div>
+                </label>
+            </div>
 
-        <!-- MENU SideBar-->
-        <nav id="sidebar_menu">
-            <ul class="menu">
-                <li><a href="www.google.com">Histoire</a></li>
-                <li><a href="#">Randonnées</a></li>
-                <li><a href="#">Les Plages</a></li>
-                <li><a href="#">Parcs Publiques</a></li>
-                <li><a href="#">Musées</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+            <!-- MENU SideBar-->
+            <nav id="sidebar_container">
+                <ul class="sidebar_menu">
+                    <li><a href="www.google.com">Histoire</a></li>
+                    <li><a href="#">Randonnées</a></li>
+                    <li><a href="#">Les Plages</a></li>
+                    <li><a href="#">Parcs Publiques</a></li>
+                    <li><a href="#">Musées</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-        <!-- CONTENU Main-->
-        <main class="main_container">
+        <main>
             <h2>
                 Bienvenue sur le site
                     <br>
@@ -90,24 +90,30 @@
             <a class="btn_main" href="#">Notre histoire...</a>
         </main>
 
-        <footer class="footer_container">
+        <footer>
             <nav>
                 <ul class="footer_list">
-                  <li class="menu-deroulant">
-                    <a href="#">Services <div class="footer_fleche">➜</div></a>
-                    <ul class="sous-menu">
-                        <li><a href="#">Histoire</a></li>
-                        <li><a href="#">Randonnées</a></li>
-                        <li><a href="#">Les Plages</a></li>
-                        <li><a href="#">Parcs Publiques</a></li>
-                        <li><a href="#">Musées</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                    <li class="footer_menu_deroulant_container">
+                        <a class="footer_menu_deroulant" href="#">
+                            Services
+                            <div class="footer_fleche">➜</div>
+                        </a>
+
+                        <ul class="footer_sous_menu">
+                            <li><a href="#">Histoire</a></li>
+                            <li><a href="#">Randonnées</a></li>
+                            <li><a href="#">Les Plages</a></li>
+                            <li><a href="#">Parcs Publiques</a></li>
+                            <li><a href="#">Musées</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
                   </li>
                 </ul>
 
-                <ul>
-                    <li><a class="contacter" href="#">Nous Contacter...</a></li>
+                <ul class="footer_list_bis">
+                    <li class="footer_contact">
+                        <a class="footer_btn_contacter" href="#">Nous Contacter...</a>
+                    </li>
                 </ul>
             </nav>
         </footer>

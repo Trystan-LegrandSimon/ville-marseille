@@ -106,8 +106,6 @@ body {
     left: 0px;
     top: 100px;
 
-  
-    background-color: transparent;
     backdrop-filter: blur(1.5rem);
     transform: translateX(-250px);
     transition: transform 300ms ease-in-out ;
@@ -266,7 +264,7 @@ main > h2 {
 }
 section  {
     backdrop-filter: blur(1.5rem);
-    background-color: #0000009d;
+    /* background-color: #0000009d; */
     display: flex;
     flex-direction: column;
     align-items: center;

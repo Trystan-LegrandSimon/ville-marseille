@@ -1,0 +1,81 @@
+/* Font : Kalam */
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat+Alternates:wght@100&display=swap");
+
+/* Rénitialisation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Kalam";
+  color: #fff;
+}
+:root {
+    --principal-color: #2FAEE0;
+    --seconde-color: blue;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/* ------------------- DÉBUT DE LA BASE ------------------- */
+body {
+  margin-top: 20px;
+  min-height: 100vh;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* ---------------- DÉBUT PAGE NOUS CONTACTER --------------- */
+body > h2 {
+  font-size: 80px;
+  text-shadow: 5px 5px 5px #ffffff;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+label {
+    font-size: 20px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+input[type="submit"] {
+  width: 100%;
+  margin-top: -5px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--principal-color);
+  font-size: 20px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px 2px white;
+  text-shadow: 5px 5px 5px black;
+  transition: ease 0.8s;
+
+}
+input[type="submit"]:hover {
+    background-color: var(--seconde-color);
+    transform: scale(1.2);
+}
+.fleche-gauche {
+  /* margin-top: -30px; */
+  transform: rotate(180deg);
+  font-size: 20px;
+  transition: transform 0.5s ease;
+}
+.fleche-gauche:hover {
+  transform: rotate(180deg) scale(2);
+}
+/* ---------------- FIN PAGE NOUS CONTACTER --------------- */

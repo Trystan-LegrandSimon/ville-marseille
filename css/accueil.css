@@ -49,7 +49,7 @@ body {
 .title_logo_header > h1 {
     color: var(--principal-color);
     font-size: 4vw;
-    text-shadow: 5px 5px 5px #000000;
+    text-shadow: 5px 5px 5px black;
 }
 .title_logo_header > img {
     width: 100%;

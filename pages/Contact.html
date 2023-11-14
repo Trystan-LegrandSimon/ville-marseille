@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contactez-nous</title>
+        <link rel="stylesheet" href="../css/contact.css" />
+        <link rel="shortcut icon" href="../assets/logo-head.png" type="image/x-icon" />
+    </head>
+
+    <body>
+        <h2 class="title-page-h2">Contactez-nous</h2>
+
+        <form action="/envoyer_message" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom..." required><br><br>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom..." required><br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email..." required><br><br>
+
+            <label for="sujet">Sujet :</label>
+            <input type="text" id="sujet" name="sujet" placeholder="Entrez votre sujet..." required><br><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Entrez votre message..." required></textarea><br><br>
+
+            <input class="btn-main" type="submit" value="Envoyer">
+        </form>
+
+        <a class="fleche-gauche" href="../Accueil.html">➜</a>
+    </body>
+</html>

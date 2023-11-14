@@ -124,6 +124,7 @@ body {
     position: fixed;
     left: 0px;
     top: 100px;
+
   
     background-color: transparent;
     backdrop-filter: blur(1000px);

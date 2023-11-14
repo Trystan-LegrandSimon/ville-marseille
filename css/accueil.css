@@ -14,7 +14,7 @@
 }
 :root {
     --principal-color: #2FAEE0;
-    --seconde-color: #0a0daa ;
+    --seconde-color: blue;
 }
 ::-webkit-scrollbar {
     display: none;

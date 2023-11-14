@@ -249,7 +249,7 @@ footer > nav {
 /* ------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------- DÉBUT DU MAIN ------------------------------------------------------------ */
 main {
-    min-height: 80vh;
+    /* min-height: 80vh; */
     margin-top: 100px;
     margin-bottom: 100px;
 
@@ -257,28 +257,62 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
 }
 main > h2 {
-    font-size: 4vw;
+    font-size: 6vw;
     text-shadow: 5px 5px 5px black;
+    margin-bottom: 50px;
 }
 section  {
     backdrop-filter: blur(1.5rem);
+    background-color: #0000009d;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    max-width: 50%;
+    max-width: 70%;
     border-radius: 20px;
     border: 4px solid black;
     box-shadow: 5px 5px 15px 5px black;
     text-shadow: 5px 5px 5px black;
 }
+.fisrt_article_contact {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.fisrt_article_contact p {
+    font-size: 1.5vw;
+}
 hr {
     width: 100%;
+    height: 4px;
+    background-color: white;
+    box-shadow: 5px 5px 15px 5px black;
 }
+article h3 {
+    font-size: 3vw;
+    text-align: center;
+}
+article h4 {
+    font-size: 2vw;
+    margin: 2% 0;
+}
+article ul, article {
+    margin: 0 15%;
 
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+article li {
+    font-size: 1.5vw;
+    text-shadow: none;
+}
+article h3 {
+   text-decoration: underline;
+}
 /* --------------------------------------------------------------- FIN DU MAIN --------------------------------------------------------------- */

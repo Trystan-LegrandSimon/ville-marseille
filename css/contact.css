@@ -208,10 +208,6 @@ footer > nav {
 .footer_menu_deroulant > .footer_fleche {
     transform: rotate(270deg);
 }
-.footer_menu_deroulant:hover and
-.footer_fleche:hover {
-    color: blue;
-}
 .footer_sous_menu {
     display: none;
     background-color: black;
@@ -219,7 +215,6 @@ footer > nav {
 
     position: absolute;
     bottom: 45px;
-    /* left: 50px; */
 }
 .footer_sous_menu:hover {
     display: flex;
@@ -244,6 +239,9 @@ footer > nav {
 .footer_menu_deroulant:hover ~ .footer_sous_menu {
     display: flex;
     flex-direction: column;
+}
+.footer_btn_nous_contacter:hover {
+    color: var(--seconde-color);
 }
 /* ---------------------------------------------------------------- FIN DU FOOTER ------------------------------------------------------------ */
 /* --------------------------------------------------------------- FIN DE LA BASE ------------------------------------------------------------ */

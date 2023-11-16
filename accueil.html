@@ -7,9 +7,9 @@
         <title>Ville de Marseille - Accueil</title>
 
    
-            <link rel="stylesheet" href="./css/accueil.css">
+            <link rel="stylesheet" href="/css/accueil.css">
        
-        <link rel="shortcut icon" href="./assets/logo-head.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/logo-head.png" type="image/x-icon">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -20,102 +20,99 @@
     </head>
 
     <body>
-        <!-- HEADER-->
-        <header  class="home_header">
-            <div class="vide">vide</div>
-
-            <!-- TITLE Header-->
-            <a class="title_logo_header" href="/accueil.html">
-                <img class="logo_header" src="/assets/logo-head.png" alt="logo de la ville de Marseille">
-                <h1>Ville de Marseille</h1>
-                <img class="logo_header" src="/assets/logo-head.png" alt="logo de la ville de Marseille">
-            </a>
-     
-
-            <!-- ICONS Header-->
-            <ul class="home_header_list">
-                <li>
-                    <a href="https://twitter.com/marseille" title="Twitter" target="_blank">
-                        <i class="icons_header x fa-brands fa-x-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://facebook.com/marseilleville/" title="Facebook" target="_blank">
-                        <i class="icons_header facebook fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/villemarseille/" title="Instagram" target="_blank">
-                        <i class="icons_header instagram fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/user/VilledeMarseille" title="Youtube" target="_blank">
-                        <i class="icons_header youtube fa-brands fa-youtube"></i>
-                    </a>
-                </li>
-            </ul>
-        </header>
-
-        <aside>
-            <!-- BOUTON SideBar -->
-            <input type="checkbox" name="" id="Open">
-            <div class="btn_menu">
-                <label for="Open" class="sidebar_icon">
-                    <div class="wrapper first"></div>
-                    <div class="wrapper second"></div>
-                    <div class="wrapper third"></div>
-                </label>
-            </div>
-
-            <!-- MENU SideBar-->
-            <nav id="sidebar_container">
-                <ul class="sidebar_menu">
-                    <li><a href="/pages/Histoire.html">Histoire</a></li>
-                    <li><a href="#">Randonnées</a></li>
-                    <li><a href="#">Les Plages</a></li>
-                    <li><a href="#">Parcs Publiques</a></li>
-                    <li><a href="#">Musées</a></li>
-                    <li><a href="/pages/Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </aside>
-
-        <main>
-            <h2>
-                Bienvenue sur le site
-                    <br>
-                de la Ville
-            </h2>
-            <a class="btn_main" href="#">Notre histoire...</a>
-        </main>
-
-        <footer>
+        <header>
             <nav>
-                <ul class="footer_list">
-                    <li class="footer_menu_deroulant_container">
-                        <a class="footer_menu_deroulant" href="#">
-                            Services
-                            <div class="footer_fleche">➜</div>
+                <a href="/Accueil.html">
+                    <img class="logo_header" src="/assets/logo-head.png" alt="logo de la ville de Marseille">
+                </a>
+                <h1>Ville de Marseille</h1>
+                <ul>
+                    <li>
+                        <a href="/Accueil.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="/pages/Histoire.html">Histoire</a>
+                    </li>
+
+                    <li class="header_menu_deroulant_container">
+                        <a class="header_menu_deroulant" href="#">
+                            À Faire
+                            <div class="header_fleche">➜</div>
                         </a>
 
-                        <ul class="footer_sous_menu">
-                            <li><a href="/pages/Histoire.html">Histoire</a></li>
+                        <ul class="header_sous_menu">
                             <li><a href="#">Randonnées</a></li>
                             <li><a href="#">Les Plages</a></li>
                             <li><a href="#">Parcs Publiques</a></li>
                             <li><a href="#">Musées</a></li>
-                            <li><a href="/pages/Contact.html">Contact</a></li>
                         </ul>
-                  </li>
-                </ul>
+                    </li>
 
-                <ul class="footer_list_bis">
-                    <li class="footer_contact">
-                        <a class="footer_btn_nous_contacter" href="/pages/Nous_Contacter.html">Nous Contacter...</a>
+                    <li>
+                        <a href="/pages/Contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
+        </header>
+        <main>
+            <section class="section_img">
+                <img src="/assets/route.jpg" alt="port de Marseille">
+                <div class="text-overlay">
+                    <h1>Bienvenue sur le site de la Ville</h1>
+
+                    <p>Dernière actualité :</p>
+                    <ul class="home_list">
+                        <li>
+                            <a href="https://twitter.com/marseille" title="Twitter" target="_blank">
+                                <i class="icons_header x fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/marseilleville/" title="Facebook" target="_blank">
+                                <i class="icons_header facebook fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/villemarseille/" title="Instagram" target="_blank">
+                                <i class="icons_header instagram fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/VilledeMarseille" title="Youtube" target="_blank">
+                                <i class="icons_header youtube fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <a class="btn_text-overlay" href="/pages/Histoire.html">Notre Histoire...</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="actualites_container">
+                <div class="actualites_section">
+                    <h2 class="title_card">ACTUALITÉS</h2>
+                    
+                    <div class="actualites_card">
+                        <img src="/assets/santon.jpg" alt="">
+                        <div>
+                            <p>Découvrir Marseille</p>
+                            <h3>Rendez-vous avec la Foire aux santons et le Marché de Noël.</h3>
+                            <p >
+                                Rendez-vous traditionnels et populaires de cette fin d'année, la Foire aux santons (du samedi 18 novembre au dimanche 31 décembre) et le Marché de Noël (du 2décembre 2023 au 7 janvier 2024) ouvrent leurs chalets.
+                            </p>
+                            <a class="savoir_plus" href="https://www.marseille.fr/actualites" target="_blank">En savoir plus ></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Ville de Marseille. Tous droits réservés.</p>
+            <p>Trystan | Sébastien | Sofiane</p>
+            <a href="/pages/Nous_Contacter.html">Nous Contacter...</a>
         </footer>
     </body>
 </html>

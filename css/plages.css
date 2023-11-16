@@ -1,0 +1,192 @@
+/* ---------------------------------------------------- DÉBUT DE LA BASE --------------------------------------------------------------------- */
+/* Font : Kalam */
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat+Alternates:wght@100&display=swap');
+
+/* ----------------------------------------------------- DÉBUT DU PARAMÈTRES ----------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam';
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+/* :root {
+    --principal-color: #2FAEE0;
+    --seconde-color: blue;
+} */
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    height: auto;
+}
+/* --------------------------------------------------- FIN DU PARAMÈTRES --------------------------------------------------------------------- */
+/* --------------------------------------------------- DÉBUT DU HEADER ----------------------------------------------------------------------- */
+header {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+header nav > a {
+ width: 100%;
+ max-width: 20%;
+}
+header nav a img {
+    width: auto;
+    height: auto;
+    max-height: 5vw;
+}
+header h1 {
+    font-size: 3vw;
+    text-align: center;
+}
+header h1,
+header nav ul li a {
+    color: white;
+}
+header nav ul li a {
+    font-size: 1.1vw;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.header_menu_deroulant {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 50px;
+}
+.header_menu_deroulant > .header_fleche {
+    transform: rotate(90deg);
+}
+.header_sous_menu {
+    display: none;
+    background-color: black;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+    /* left: 50px; */
+}
+.header_sous_menu:hover {
+    display: flex;
+    flex-direction: column;
+}
+.header_menu_deroulant > a {
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.header_sous_menu li {
+    width: 150px;
+    padding: 10px;
+    text-align: left;
+}
+.header_sous_menu li a {
+    color: white !important;
+}
+.header_sous_menu > li:hover {
+    background-color: rgba(255, 255, 255, 0.111);
+    box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.2);
+}
+.header_menu_deroulant:hover ~ .header_sous_menu {
+    display: flex;
+    flex-direction: column;
+}
+/* -------------------------------------------------------------- FIN DU HEADER -------------------------------------------------------------- */
+/* Ajustements pour améliorer la lisibilité */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: auto;
+    min-height: 10vh;
+
+    color: white;
+    background-color: black;
+    box-shadow: 5px 5px 15px 5px black;
+    margin-top: 100px;
+}
+footer > p:nth-child(1) {
+    width: 100%;
+    max-width: 20%;
+}
+footer a {
+    color: white;
+    width: 100%;
+    max-width: 20%;
+    text-align: center;
+}
+footer a:hover {
+    color: blue;
+}
+/* FIN Header */
+/* Début du Main */
+/* Styles pour la section des articles */
+main h1 {
+    font-size: 4vw;
+    margin-top: 5vh;  
+    display: inline-block;
+    border-bottom: 2px solid #777; 
+}
+/* Styles pour chaque article */
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 3vh 20vw;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+article img {
+    max-width: 45%;
+    height: auto;
+}
+article div {
+    margin-left: 5vw;
+    max-width: 45%;
+}
+article h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+article h3 {
+    color: #333;
+    font-size: 1.2rem;
+}
+article p, 
+article ul li {
+    color: #777;
+    font-size: 1.1rem;
+}
+article h2,
+article h3,
+article ul li,
+article p {
+    text-align: left;
+}
+
+article:hover {
+    transform: scale(1.1);
+}

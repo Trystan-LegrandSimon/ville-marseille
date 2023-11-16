@@ -10,6 +10,7 @@
     font-family: 'Kalam';
     list-style: none;
     text-decoration: none;
+    text-align: center;
 }
 /* :root {
     --principal-color: #2FAEE0;
@@ -18,14 +19,15 @@
 ::-webkit-scrollbar {
     display: none;
 }
+body {
+    height: auto;
+}
 /* --------------------------------------------------- FIN DU PARAMÈTRES --------------------------------------------------------------------- */
 /* --------------------------------------------------- DÉBUT DU HEADER ----------------------------------------------------------------------- */
 header {
     width: 100%;
     height: auto;
-    background-color: transparent;
-    position: absolute;
-    z-index: 1;
+    background-color: black;
 }
 nav {
     display: flex;
@@ -35,8 +37,8 @@ nav {
     padding: 10px 0;
 }
 header nav > a {
-    width: 100%;
-    max-width: 20%;
+ width: 100%;
+ max-width: 20%;
 }
 header nav a img {
     width: auto;
@@ -45,10 +47,11 @@ header nav a img {
 }
 header h1 {
     font-size: 3vw;
+    text-align: center;
 }
 header h1,
 header nav ul li a {
-    color: black;
+    color: white;
 }
 header nav ul li a {
     font-size: 1.1vw;
@@ -104,119 +107,7 @@ nav ul {
     flex-direction: column;
 }
 /* -------------------------------------------------------------- FIN DU HEADER -------------------------------------------------------------- */
-main {
-    height: auto;
-    margin-bottom: 10vh;
-}
-.section_img {
-    position: relative;
-    text-align: center;
-}
-.section_img img {
-    width: 100%;
-    height: 70vh;
-    box-shadow: 5px 5px 15px 5px black;
-}
-.text-overlay {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    text-align: center;
-    box-shadow: 5px 5px 15px 5px black;
-    background-color: whitesmoke;
-    border-radius: 20px;
-    width: 50%;
-    height: auto;
-}
-.text-overlay h1 {
-    font-size: 2em;
-    margin: 0;
-}
-.text-overlay ul {
-    margin-bottom: 5vh;
-}
-.text-overlay div {
-    margin-bottom: 5vh;
-}
-.text-overlay p {
-    font-size: 1.2em;
-    margin: 10px 0 0;
-}
-.home_list {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    list-style: none;
-    gap: 20px;
-}
-.icons_header {
-    color: black;
-    font-size: 2vw;
-}
-.icons_header:hover {
-    color: black;
-    font-size: 2vw;
-}
-.btn_text-overlay {
-    position:static;
-}
-.btn_text-overlay  {
-    padding: 10px;
-    color: black;
-    background-color: blue;
-    box-shadow: 5px 5px 15px 5px black;
-    border-radius: 10px;
-}
-/* Fin de l'overlay */
-/* Début de la card actualité */
-.actualites_container {
-    margin-top: 15vh;
-    width: 100%;
-    height: auto;
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.actualites_container h2 {
-    margin-left: 12vw;
-}
-.actualites_section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-.actualites_card {
-    width: 80%;
-    height: auto;
-    background-color: whitesmoke;
-    box-shadow: 5px 5px 15px 5px black;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.actualites_card div {
-    margin-left: 20px;
-}
-.actualites_card div p {
-    margin-bottom: 18.5vh;
-}
-.actualites_card div p:nth-child(1) {
-    color: gray;
-}
-.actualites_card img {
-    width: 100%;
-    height: auto;
-    max-width: 40vw;
-    box-shadow: 5px 5px 15px 5px black;
-}
-/* FIN de la card actualité */
-/* Début du footer */
+/* Ajustements pour améliorer la lisibilité */
 footer {
     display: flex;
     align-items: center;
@@ -229,6 +120,7 @@ footer {
     color: white;
     background-color: black;
     box-shadow: 5px 5px 15px 5px black;
+    margin-top: 100px;
 }
 footer > p:nth-child(1) {
     width: 100%;
@@ -243,17 +135,33 @@ footer a {
 footer a:hover {
     color: blue;
 }
-
-
-@media screen and (max-width: 1400px) {
-    .actualites_card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 100px;
-    }
-    .actualites_card div p {
-        margin-bottom: 5vh;
-    }
+/* FIN Header */
+/* Début du Main */
+/* Styles pour la section des articles */
+main h1 {
+    font-size: 4vw;
+    margin-top: 5vh;  
+    display: inline-block;
+    border-bottom: 2px solid #777; 
+}
+/* Styles pour chaque article */
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 3vh 5vw;
+    padding: 20px;
+}
+article h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+article p {
+    color: #777;
+    font-size: 1.1rem;
+}
+article h2,
+article p {
+    text-align: left;
 }

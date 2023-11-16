@@ -141,7 +141,8 @@ footer a:hover {
 /* Styles pour la section des articles */
 main h1 {
     font-size: 4vw;
-    margin-top: 5vh;  
+    margin-top: 5vh; 
+    margin-bottom: 5vh; 
     display: inline-block;
     border-bottom: 2px solid #777; 
 }
@@ -149,7 +150,7 @@ main h1 {
 main section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -159,7 +160,7 @@ article {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* margin: 2vw 20vh; */
+    margin: 1vw 1vw;
     padding: 20px;
     transition: transform 0.3s ease;
     

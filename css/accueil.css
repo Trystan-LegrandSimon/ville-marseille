@@ -167,13 +167,24 @@ main {
 }
 /* Fin de l'overlay */
 /* Début de la card actualité */
+.actualites_container {
+    margin-top: 15vh;
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.actualites_container h2 {
+    margin-left: 12vw;
+}
 .actualites_section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    margin-top: 100px;
+    
 }
 .actualites_card {
     width: 80%;

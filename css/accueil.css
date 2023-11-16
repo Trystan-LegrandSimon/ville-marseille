@@ -167,22 +167,14 @@ main {
 }
 /* Fin de l'overlay */
 /* Début de la card actualité */
-.actualites_container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    
-}
 .actualites_section {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
     margin-top: 100px;
 }
-/* .actualites_section .title_card {
-    margin-left: -1250px;
-} */
 .actualites_card {
     width: 80%;
     height: auto;
@@ -191,6 +183,7 @@ main {
     padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .actualites_card div {
     margin-left: 20px;
@@ -224,4 +217,18 @@ footer {
 }
 footer a {
     color: white;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .actualites_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .actualites_card div p {
+        margin-bottom: 5vh;
+    }
 }
